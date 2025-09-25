@@ -56,7 +56,7 @@ export default function ShopScreen() {
         {/* Product Image */}
         <View style={[commonStyles.section, { alignItems: 'center', paddingVertical: 20 }]}>
           <Image
-            source={{ uri: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop' }}
+            source={require('../assets/images/a5103974-aee6-415a-9faa-72b606dfcdca.png')}
             style={[commonStyles.productImage, { width: 320, height: 320 }]}
             resizeMode="cover"
           />

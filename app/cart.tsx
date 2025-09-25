@@ -17,7 +17,7 @@ export default function CartScreen() {
       size: '16oz',
       price: 12.99,
       quantity: 2,
-      image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=100&h=100&fit=crop'
+      image: require('../assets/images/a5103974-aee6-415a-9faa-72b606dfcdca.png')
     }
   ]);
 
@@ -90,7 +90,7 @@ export default function CartScreen() {
             <View key={item.id} style={[commonStyles.card, { marginBottom: 16 }]}>
               <View style={{ flexDirection: 'row' }}>
                 <Image
-                  source={{ uri: item.image }}
+                  source={item.image}
                   style={{ width: 80, height: 80, borderRadius: 8, marginRight: 16 }}
                   resizeMode="cover"
                 />
